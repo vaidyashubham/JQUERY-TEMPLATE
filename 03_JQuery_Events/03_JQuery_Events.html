@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.6.3.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="03_styles.css">
+    <title>JQuery Events</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Events</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- Click Event -->
+    <h4>Click Event</h4>
+    <button class="btn btn-primary" id="blue-btn">Login</button>
+
+    <!-- DBL  Click -->
+    <h4>DBLClick Event</h4>
+    <button class="btn btn-danger" id="red-btn">Register</button>
+
+    <!-- Click Event with Toggle -->
+    <h4>Click with Toggle</h4>
+    <button class="btn btn-success" id="green-btn">SignIn</button>
+
+
+    <!-- Modal with JQuery -->
+    <h4>Modal with JQuery</h4>
+    <button class="btn btn-secondary" id="btn-1">Show Modal</button>
+
+
+
+    <!-- Category Modal -->
+    <div class="modal" id="category-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated jackInTheBox">
+                <div class="modal-header bg-success text-white">
+                    <h3>Add Category</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Category Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-dark" id="btn-2">Close</a>
+                        <input type="submit" value="Add Category" class="btn btn-success">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="03_app.js"></script>
+</body>
+</html>
+

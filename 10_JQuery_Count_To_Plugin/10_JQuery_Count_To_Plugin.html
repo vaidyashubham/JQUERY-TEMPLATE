@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.6.3.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <title>JQuery Magnify Plugin</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Count To Plugin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+
+<section class="p-5 bg-dark text-white mt-5 text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="display-3">
+                <span class="timer" data-from="0" data-to="1800"
+                      data-speed="5000" data-refresh-interval="50"></span>
+            </h1>
+            <h2>Students Trained</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="display-3">
+                <span class="timer" data-from="0" data-to="24145"
+                      data-speed="5000" data-refresh-interval="50"></span>
+            </h1>
+            <h2>Lines of Code</h2>
+        </div>
+        <div class="col-md-4">
+            <h1 class="display-3">
+                <span class="timer" data-from="100" data-to="54785"
+                        data-speed="5000" data-refresh-interval="50"></span>
+            </h1>
+            <h2>Downloads</h2>
+        </div>
+    </div>
+</section>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="jquery.countTo.js"></script>
+<script src="10_app.js"></script>
+<script type="text/javascript">
+    $('.timer').countTo();
+</script>
+</body>
+</html>
