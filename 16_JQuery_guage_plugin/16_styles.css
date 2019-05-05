@@ -1,0 +1,13 @@
+.jchart--donut--segment, .jchartpie--segment {
+    transition: stroke-dasharray 1s ease;
+}
+
+.jchart {
+    width: 400px;
+    height: 400px;
+}
+
+.jchart--body {
+    width: 100%;
+    height: 100%;
+}

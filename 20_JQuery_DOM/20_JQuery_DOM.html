@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.6.3.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="20_styles.css">
+    <title>JQuery Basics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery DOM</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-light text-center">
+                    <button id="all-btn" type="button" class="btn btn-primary">All Employees</button>
+                    <button id="male-btn" type="button" class="btn btn-success">Male Employees</button>
+                    <button id="female-btn" type="button" class="btn btn-teal">Female Employees</button>
+                </div>
+                <div class="card-body">
+                    <table class="table text-center text-uppercase table-hover">
+                        <thead class="blue-gradient-rgba text-white text-center">
+                            <tr>
+                                <th>EMP ID</th>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>GENDER</th>
+                                <th>COUNTRY</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="20_app.js"></script>
+</body>
+</html>
+

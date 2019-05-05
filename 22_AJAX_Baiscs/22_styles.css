@@ -1,0 +1,27 @@
+.bg-teal , .btn-teal{
+    background-color: #145555 !important;
+}
+.text-teal{
+    color: #145555;
+}
+.c_img , .t_card , .s_card{
+    box-shadow: 0 0 15px #145555;
+    border-radius: 10px !important;
+    transition: all 0.5s;
+}
+.t_img{
+    box-shadow: 0 0 15px #145555;
+    margin-top: -60px;
+}
+.t_card:hover , .s_card:hover{
+    background-color: #145555;
+    transform: perspective(400px) rotateY(10deg);
+}
+
+.t_card:hover h3 , .t_card:hover p , .t_card:hover .fab{
+    color: white;
+}
+
+.s_card:hover h3 , .s_card:hover p , .s_card:hover .fa , .s_card:hover .fab{
+    color: white;
+}

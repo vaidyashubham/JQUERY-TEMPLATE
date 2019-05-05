@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: "Comic Sans MS",sans-serif;
+}
+h2{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 10px;
+}
+div{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+button{
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    outline: none;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#image-gallery-div{
+    margin: 5px 0 0 20px;
+    background-color: white;
+
+}
+img{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+img:hover{
+    box-shadow: 0 0 15px black;
+}
