@@ -1,0 +1,160 @@
+.container{
+  width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+}
+.main-navigation{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.booking{
+  display: inline-block;
+  width: 33%;
+  font-size: 25px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid;
+  height: 30px;
+  background-color: #95bcf2;
+}
+.payment{
+  display: inline-block;
+  width: 32%;
+  border: 3px solid;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0px 10px 0px;
+  font-weight: bold;
+  height: 30px;
+}
+.confirm{
+  display: inline-block;
+  width: 32%;
+  border: 3px solid;
+  font-size: 25px;
+  padding: 10px 0px 10px 0px;
+  font-weight: bold;
+  height: 30px;
+  text-align: center;
+}
+.booking-date{
+  margin: 20px;
+  text-align: center;
+}
+button{
+  width: 120px;
+  height: 35px;
+  margin: 0px 20px 0px 0px;
+  background-color: darkgray;
+  box-shadow: 5px 5px black;
+}
+#datepicker{
+  height: 31px;
+  border: 2px solid;
+  box-shadow: 2px 3px;
+}
+::placeholder {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.select-date{
+  display: inline-block;
+}
+.pay-now{
+  display: inline-block;
+}
+.bus-layout{
+  border: 2px solid black;
+  padding-left: 10px;
+}
+.row-1{
+  margin-bottom: 70px;
+}
+.available-seats{
+  height: 90px;
+  padding-top: 30px;
+  margin: 20px 35px;
+  width: 13%;
+  background-color: rgb(75, 139, 75);
+  display: inline-block;
+}
+.selected-seats{
+  height: 90px;
+  margin: 20px 35px;
+  width: 13%;
+  background-color: rgb(224, 63, 63);
+  display: inline-block;
+}
+.seat-id{
+  margin: 0px 0px 20px 54px;
+  font-size: 50px;
+}
+#paynow{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+form{
+  width: 25%;
+  margin: auto;
+  padding:20px 0px 20px 38px;
+  border: 2px solid;
+}
+.form-label{
+  display: block;
+  padding: 0px 0px 5px 0px;
+  font-weight: bold;
+}
+.form-group-1{
+  display: inline-block;
+}
+.form-group{
+  margin: 5px;
+}
+.card-input{
+  margin-left: 5px;
+}
+.form-control-1{
+  margin-right: 42px;
+  outline: none;
+  border-radius: 5px;
+}
+.form-control{
+  outline: none;
+  border-radius: 5px;
+}
+.ticket-confirm{
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px;
+}
+.header{
+  margin: 10px;
+}
+#information{
+  color: rgb(241, 122, 24);
+  margin-bottom: 15px;
+}
+.bookedSeats{
+  height: 90px;
+  margin: 20px 35px;
+  width: 13%;
+  background-color: grey;
+  display: inline-block;
+}
+.total-amount{
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+.book-another-seat{
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
