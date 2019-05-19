@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kavery Travels</title>
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/default.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css" type="text/css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" type="text/css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-navigation">
+      <div class="booking">Booking</div>
+      <div class="payment">Payment</div>
+      <div class="confirm">Confirm</div>
+    </div>
+
+    <div class="booking-date">
+      <div class="select-date">
+        <input id="datepicker" name="trip-start" placeholder="Select a date" required readonly>
+      </div>
+      <div class="pay-now">
+        <button type="button" name="payment" id="paymentButton" value="Pay now">Pay now
+      </div>    
+    </div>
+
+    <div class="vacant-seats">
+      
+    </div>
+     <!----Bus Layout ------>
+    <div class="bus-layout">
+      <div class="row-1">
+        <div data-seat="1" class="available-seats">
+          <span class="seat-id">01</span>
+        </div>
+        <div data-seat="2" class="available-seats">
+          <span class="seat-id">02</span>
+        </div>
+        <div data-seat="3" class="available-seats">
+          <span class="seat-id">03</span>
+        </div>
+        <div data-seat="4" class="available-seats">
+          <span class="seat-id">04</span>
+        </div>
+        <div data-seat="5" class="available-seats">
+          <span class="seat-id">05</span>
+        </div>
+        <div data-seat="6" class="available-seats">
+          <span class="seat-id">06</span>
+        </div>
+        <div data-seat="7" class="available-seats">
+          <span class="seat-id">07</span>
+        </div>
+        <div data-seat="8" class="available-seats">
+          <span class="seat-id">08</span>
+        </div>
+        <div data-seat="9" class="available-seats">
+          <span class="seat-id">09</span>
+        </div>
+        <div data-seat="10" class="available-seats">
+          <span class="seat-id">10</span>
+        </div>
+      </div>
+      <div class="row-2">
+        <div data-seat="11" class="available-seats">
+          <span class="seat-id">11</span>
+        </div>
+        <div data-seat="12" class="available-seats">
+          <span class="seat-id">12</span>
+        </div>
+        <div data-seat="13" class="available-seats">
+          <span class="seat-id">13</span>
+        </div>
+        <div data-seat="14" class="available-seats">
+          <span class="seat-id">14</span>
+        </div>
+        <div data-seat="15" class="available-seats">
+          <span class="seat-id">15</span>
+        </div>
+        <div data-seat="16" class="available-seats">
+          <span class="seat-id">16</span>
+        </div>
+        <div data-seat="17" class="available-seats">
+          <span class="seat-id">17</span>
+        </div>
+        <div data-seat="18" class="available-seats">
+          <span class="seat-id">18</span>
+        </div>
+        <div data-seat="19" class="available-seats">
+          <span class="seat-id">19</span>
+        </div>
+        <div data-seat="20" class="available-seats">
+          <span class="seat-id">20</span>
+        </div>
+      </div>
+    </div>
+
+    <!----Payment Gateway ------>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Name on Card</label>
+          <input class="form-control" size='28' type='text' id="name" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Card Number</label>
+          <input class="form-control" size='28' type='text' max="12" pattern="^(?:\d[ -]*?){12}$" id="cardNo" required>
+        </div>
+      </div>
+      <div class="form-row card-input">
+        <div class="form-group-1">
+          <label class="form-label">CVV</label>
+          <input class="form-control-1" placeholder='ex. 311' size='4' max="3" type='text' id="cvv" required>
+        </div>
+        <div class="form-group-1">
+          <label class="form-label">Expiration</label>
+          <input class="form-control-1" placeholder='MM' size='3' type='text' max="2" id="month" required>
+          <input class="form-control-1" placeholder='YYYY' size='4' type='text' max="4" id="year" required>
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="form-control total-amount">
+            
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <button class="form-control" id="paynow" type='submit'>Pay »</button>
+        </div>
+      </div>
+    </form>
+
+    <!-----Booking Confirmation Message-->
+    <div class="ticket-confirm">
+      <div class="header">
+        <span id="information">Booking Confirm</span>
+      </div>
+      <div class="body">
+          <div>
+            <span>Name : </span><span class="display-name"></span>
+          </div>
+          <div>
+            <span>Seat No : </span><span class="display-seat"></span>
+          </div>
+          <div>
+            <span>DOJ : </span><span class="display-doj"></span>
+          </div>
+          <div>
+            <span>Price : </span><span class="display-price"></span>
+          </div>
+        </div>
+    </div>
+
+    <!----Book Another Seat-->
+    <div class="book-another-seat">
+      <input type="button" value="Book Another Ticket">
+    </div>
+  </div>
+  
+  <script src="dist/jquery-3.4.1.min.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
